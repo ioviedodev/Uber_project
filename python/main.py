@@ -21,8 +21,7 @@ def main():
     driver = Driver(1,"Daniel Zambrano","1145248","+4599845",date_now,date_now,"driver",0,"danielzambrano@gmail.com","pass7898","Peru","Lima","Active", driver_license)
     driver.print_driver()
 
-
-    car = Car(1,"GTX3465","TIPO_B",date_now,True,"TESLA","X3",date_now,2,5, Account(1,"Cristiana Segovia","19874512","+45123581",date_now,date_now,"driver",0,"testing@gmail.com","pass123456","Colombia","Cali"))
+    car = Car(1,"GTX3465","TIPO_B",date_now,True,"TESLA","X3",date_now,2,5, driver)
     car.car_print()
 
 

@@ -1,5 +1,5 @@
 from datetime import datetime
-from account import Account
+from driver import Driver
 
 
 class Car:
@@ -13,7 +13,7 @@ class Car:
     enrrolment_date =   datetime
     passengers      =   int
     capacity        =   int
-    driver          =   Account
+    driver          =   Driver
      
 
     def __init__(self, id,number_plate, category, assembly_date, enrolled, brand, model, enrrollment_date, passengers, capacity, driver):
@@ -40,7 +40,7 @@ class Car:
         print("enrrolment_date: "+ self.enrrolment_date.strftime("%d/%m/%Y, %H:%M:%S"));
         print("passengers: "+ str(self.passengers));
         print("capacity: "+ str(self.capacity));
-        self.driver.print_object()
+        self.driver.print_driver()
 
 
 
