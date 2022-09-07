@@ -13,6 +13,7 @@ class Car:
     enrrolment_date =   datetime
     passengers      =   int
     capacity        =   int
+    driver          =   Account
      
 
     def __init__(self, id,number_plate, category, assembly_date, enrolled, brand, model, enrrollment_date, passengers, capacity, driver):
