@@ -1,7 +1,19 @@
 public class UberPool extends CarBasic{
     
-    public UberPool(String number_plate, Account driver, int places_availables)
+    public UberPool(String number_plate, Account driver)
     {
-        super(number_plate, driver, places_availables);
+        super(number_plate, driver);
+    }
+
+    @Override
+    public void setCapacity(Integer capacity) {
+        if(capacity == 4)
+        {
+            super.capacity=capacity;            
+        }
+        else
+        {
+            System.out.println("Please insert a valid capacity");
+        }        
     }
 }

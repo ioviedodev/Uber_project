@@ -2,11 +2,16 @@ class Main {
     public static void main(String[] args) {
         System.out.println("Hola mundo");
 
-        Car car = new Car("GTX3465",new Account("Derek Tristan", "1130750917"));
-        car.capacity=5;
-        car.brand="GM";
+        Account driver = new Account("Derek Tristan", "1130750917");
+        Car car = new Car("GTX3465",driver);
+        car.setBrand("GM");
+        car.print_object();
+
         
-        car.car_print_object();
+        UberX uberx = new UberX("P541235", driver);
+        uberx.setPassengers(5);
+        System.out.print(uberx.getPassengers());
+
 
     }
 }

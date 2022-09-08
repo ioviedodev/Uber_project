@@ -1,7 +1,19 @@
 public class UberX extends CarBasic{
 
-    public UberX(String number_plate, Account driver, int places_availables)
+    public UberX(String number_plate, Account driver)
     {
-        super(number_plate, driver, places_availables);
+        super(number_plate, driver);
+    }
+
+    @Override
+    public void setCapacity(Integer capacity) {
+        if(capacity == 4)
+        {
+            super.capacity=capacity;            
+        }
+        else
+        {
+            System.out.println("Please insert a valid capacity");
+        }        
     }
 }

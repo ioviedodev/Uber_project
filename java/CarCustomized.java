@@ -12,4 +12,13 @@ public class CarCustomized extends Car{
         this.type_car_accepted = type_car_accepted;
         this.seat_material = seat_material;
     }
+
+    @Override
+    void print_object()
+    {
+        System.out.println("CarCustomized layer");
+        super.print_object();
+        System.out.println("type_car_accepted: "+ this.type_car_accepted);
+        System.out.println("seat_material: "+ this.seat_material);
+    }
 }

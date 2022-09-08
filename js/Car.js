@@ -13,13 +13,14 @@ class Car
     //     this.passengers=passengers;
     //     this.capacity=capacity;
     // }
-    constructor(number_plate, category, brand, model, driver)
+    constructor(number_plate, category, brand, model, driver, places_available)
     {
         this.number_plate=number_plate;
         this.category=category;
         this.brand=brand;
         this.model=model;
         this.driver=driver;
+        this.places_available=places_available;
     }
 
     print_object = function ()
@@ -29,5 +30,6 @@ class Car
         console.log(this.brand)
         console.log(this.model)
         this.driver.print_object()
+        console.log(this.places_available)
     }
 }

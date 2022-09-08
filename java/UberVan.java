@@ -7,4 +7,16 @@ public class UberVan extends CarCustomized
     {
         super(number_plate, driver, type_car_accepted, seat_material);
     }
+    
+    @Override
+    public void setCapacity(Integer capacity) {
+        if(capacity == 6)
+        {
+            super.capacity=capacity;            
+        }
+        else
+        {
+            System.out.println("Please insert a valid capacity");
+        }        
+    }
 }
