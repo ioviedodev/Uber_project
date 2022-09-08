@@ -1,4 +1,5 @@
 from datetime import datetime
+
 from driver import Driver
 
 
@@ -42,9 +43,11 @@ class Car:
         print("enrrolment_date: "+ self.enrrolment_date.strftime("%d/%m/%Y, %H:%M:%S"));
         print("passengers: "+ str(self.passengers));
         print("capacity: "+ str(self.capacity));
-        self.driver.print_driver()
+        self.driver.print_object()
         print("places_available: "+ str(self.places_available));
 
+    def set_capacity(self, capacity):
+        self.capacity = capacity
 
 
 

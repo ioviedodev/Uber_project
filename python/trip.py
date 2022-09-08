@@ -3,8 +3,10 @@ from payment import Payment
 from user import User
 from car import Car
 from route import Route
+from user import User
+from payment import Payment
 
-class trip:
+class Trip:
     id              =   int
     created_trip    =   datetime
     init_trip       =   datetime
@@ -35,7 +37,7 @@ class trip:
         print("finish_trip: ", self.finish_trip.strftime("%d/%m/%Y, %H:%M:%S"));
         print("status       : "+ self.status);
         print("cost       : "+ str(self.cost));
-        self.user.print_user()
+        self.user.print_object()
         self.car.car_print()
         self.route.print_object()
         self.payment.print_object()

@@ -14,6 +14,7 @@ class Payment:
         self.executed_date = executed_date
     
     def print_object(self):
+        print("Payment layer");
         print("id: "+ str(self.id));
         print("status: "+ self.status);
         print("executed_date: ", self.executed_date.strftime("%d/%m/%Y, %H:%M:%S"));

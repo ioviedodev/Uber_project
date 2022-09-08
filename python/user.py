@@ -6,7 +6,8 @@ class User(Account):
         super().__init__(id, full_name, dni, telephone, creation_date, last_login_date, role, reputation, email, password, country, city)
         self.number_trips = number_trips
 
-    def print_user(self):
-        self.print_object()
+    def print_object(self):
+        super().print_object()
+        print("User layer")
         print("number_trips              : "+ str(self.number_trips));  
         

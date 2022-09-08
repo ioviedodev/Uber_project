@@ -7,8 +7,9 @@ class Paypal(Payment):
         super().__init__(id, status, executed_date)
         self.email = email
 
-    def print_paypal(self):
-        self.print_object()
+    def print_object(self):
+        super().print_object()
+        print("Paypal Layer");
         print("email: "+ self.email);
 
     
